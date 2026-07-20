@@ -2,19 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: aliceblue;
 }
 /* First NAV */
 
 .first-nav{
     margin: 0px 2vw;
     padding: 8px;
-    background-color: #d3d3d3;
+    background-color: #D3D3D3
 }
 .first-container{
-    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .f-navlink{
@@ -30,9 +32,9 @@
     margin: 0px 2vw;
     padding: 8px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    background-color: aqua;
+    background-color: #fff;
 }
 
 .nav-brand a{
@@ -41,13 +43,20 @@
 
 .navbar ul{
     display: flex;
-    gap: 5vw;
+    gap: 2vw;
     
 }
 
 .navbar ul li{
     list-style: none;
 }
+
+.navbar ul li :hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
 .navbar ul li a{
     text-decoration: none;
+    color: #000;
 }

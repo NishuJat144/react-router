@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const Header = () => {
     return (
         <header className="section-navbar">
@@ -5,11 +7,11 @@ export const Header = () => {
             <section className="first-nav">
                 <div className="first-container">
                 <div className="head-txt">
-                <p>Get 30 day MemberShip and get 100% refund</p>
+                <p>Get Gym MemberShip and get 20% refund</p>
                 </div>
                 <div className="f-navlink">
-                <a href="#" >SIGN IN</a>
-                <a href="#">SIGN UP</a>
+                <NavLink href="#" >SIGN IN</NavLink>
+                <NavLink href="#">SIGN UP</NavLink>
                </div>
               </div>
              </section>
@@ -17,17 +19,17 @@ export const Header = () => {
            {/* Second Nav */}
                <div className="container">
                     <div className="nav-brand">
-                       <a href="#">
+                       <NavLink to="/">
                         <p>YFlix</p>
-                       </a> 
+                       </NavLink> 
                     </div>
                     
                     <nav className="navbar">
                         <ul>
-                            <li> <a href="#">HOME</a></li>
-                            <li> <a href="#">ABOUT</a></li>
-                            <li> <a href="#">MOVIES</a></li>
-                            <li> <a href="#">CONTACT</a> </li>
+                            <li> <NavLink to="/">HOME</NavLink></li>
+                            <li> <NavLink to="/about">ABOUT</NavLink></li>
+                            <li> <NavLink to="/movie">MOVIES</NavLink></li>
+                            <li> <NavLink to="/contact">CONTACT</NavLink> </li>
                         </ul>
                     </nav>
                 </div>
