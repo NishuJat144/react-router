@@ -6,7 +6,11 @@
 }
 body{
     background-color: aliceblue;
+    padding: 8px;
 }
+
+/* HEADER COMPONENT CSS */
+
 /* First NAV */
 
 .first-nav{
@@ -59,4 +63,43 @@ body{
 .navbar ul li a{
     text-decoration: none;
     color: #000;
+}
+
+/* Footer Component CSS */
+.footer{
+    margin: 5vh;
+    padding: 40px;
+    background: #d3d3d3;
+}
+
+.foot-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.one{
+    flex: 1.5;
+}
+
+.two,
+.three,
+.news{
+    flex: 1;
+}
+
+.shop,
+.exp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.one img{
+    width: 50px;
+    height: auto;
+}
+.input{
+    margin-top: 10px;
 }
