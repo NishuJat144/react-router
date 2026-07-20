@@ -56,8 +56,12 @@ body{
 }
 
 .navbar ul li :hover{
-    color: blue;
-    border-bottom: 2px solid blue;
+    color : #535bf2;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.navbar ul li .active{
+    color: #535bf2;
 }
 
 .navbar ul li a{

@@ -1,6 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 export const Header = () => {
+
+    // * Style NavLink Function
+    const getNavLinkStyle = ({isActive}) => {
+         return {
+            color : isActive ? "green" : "black",
+         }
+    }
+
     return (
         <header className="section-navbar">
             {/* First Nav */}
@@ -26,10 +34,18 @@ export const Header = () => {
                     
                     <nav className="navbar">
                         <ul>
-                            <li> <NavLink to="/">HOME</NavLink></li>
-                            <li> <NavLink to="/about">ABOUT</NavLink></li>
-                            <li> <NavLink to="/movie">MOVIES</NavLink></li>
-                            <li> <NavLink to="/contact">CONTACT</NavLink> </li>
+                            <li> <NavLink to="/" className={({isActive}) => isActive?"active" : "nav-link" }>
+                            HOME</NavLink></li>
+                            <li> <NavLink to="/about" className="nav-link" 
+                             style={({isActive}) => {
+                                return {
+                                    color : isActive ? "red" : "black" ,
+                                }
+                             }}>
+                                ABOUT</NavLink></li>
+                            <li> <NavLink to="/movie" className="nav-link"
+                             style={getNavLinkStyle}>MOVIES</NavLink></li>
+                            <li> <NavLink to="/contact" className="nav-link">CONTACT</NavLink> </li>
                         </ul>
                     </nav>
                 </div>
