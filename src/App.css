@@ -142,3 +142,30 @@ body{
   background-color: peachpuff;
   color: red;
 }
+
+/* MOVIES CSS */
+.cards-container{
+    padding: 8px;
+    background-color: #fff;
+}
+.cards-list{
+    list-style: none;
+    margin: 50px;
+}
+.movie-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2px;
+    justify-items: center;
+    margin: 12vh;
+}
+.cards-img img{
+    min-height: 4vh;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.cards-btn{
+    width: 100%;
+    background-color: #d3d3d3;
+}
