@@ -6,6 +6,8 @@ import { Contact } from "./pages/Contact";
 import { Movie } from "./pages/Movie";
 import AppLayout from "./components/layout/AppLayout";
 import "./App.css"
+import { ErrorPage } from "./pages/ErrorPage";
+// import { NotFound } from "./pages/NotFound";
 const App = () => {
 
    // * Create Route 
@@ -13,6 +15,7 @@ const App = () => {
       {
         path : "/",
         element : <AppLayout/>,
+        errorElement:  <ErrorPage/>,
         children :[
          {
            path : "/" ,
@@ -28,13 +31,22 @@ const App = () => {
         },
         {
          path :"/movie",
-         element : <Movie/>
+         element : <Movie/>,
         },
-       ]
-      }]
+        ],
+      },
+
+        
+        // {
+        //   path:"*",
+        //   element:<NotFound/>
+        // },
+      
+      ]
     )
      return <RouterProvider router={router}/>;
-}
+  }
+
 
 export default App ;
 
