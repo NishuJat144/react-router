@@ -169,3 +169,29 @@ body{
     width: 100%;
     background-color: #d3d3d3;
 }
+
+/* LOADING CSS */
+.loader-container{
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader{
+    height: 100px;
+    width: 100px;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    border-top-color: #333;
+    animation: Loader 1s infinite;
+}
+
+@keyframes Loader {
+    100%{
+        rotate: 360deg;
+    }
+    
+}
