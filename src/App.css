@@ -193,5 +193,48 @@ body{
     100%{
         rotate: 360deg;
     }
-    
+}
+
+/* CONTACT CSS */
+.contact-section{
+    width: 45%;
+    margin: 130px 20px 0px 80px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.username,.email,.text-area{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+#username,#email{
+    height: 35px;
+   
+}
+
+#message{
+     height: 160px;
+}
+
+#username,#email,#message{
+    font-size: 18px;
+    padding: 5px;
+    width: 100%;
+}
+
+.form-btn{
+    font-size: 16px;
+}
+.form-btn:hover{
+    cursor: pointer;
 }
