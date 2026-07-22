@@ -8,6 +8,8 @@ import AppLayout from "./components/layout/AppLayout";
 import "./App.css"
 import { ErrorPage } from "./pages/ErrorPage";
 import { getMoviesData } from "./api/GetApiData";
+import { MoviesDetails } from "./components/layout/UI/MoviesDetails";
+import { getMoviesDetails } from "./api/GetMoviesDetails";
 // import { NotFound } from "./pages/NotFound";
 const App = () => {
 
@@ -35,6 +37,12 @@ const App = () => {
          element : <Movie/>,
          loader : getMoviesData,
         },
+        // & DYNAMIC ROUTE
+         {
+          path : "/movie/:moviesID",
+          element:<MoviesDetails/>,
+          loader:getMoviesDetails ,
+         }
         ],
       },
 

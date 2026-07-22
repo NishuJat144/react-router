@@ -15,7 +15,7 @@ export const Header = () => {
             <section className="first-nav">
                 <div className="first-container">
                 <div className="head-txt">
-                <p>Get Gym MemberShip and get 20% refund</p>
+                <p>Enjoy Movies and get 20% discount on Subscription</p>
                 </div>
                 <div className="f-navlink">
                 <NavLink href="#" >SIGN IN</NavLink>

@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const Card = ({ currMovies }) => {
     const {Poster , imdbID} = currMovies ;
     // console.log(currMovies.Title);
@@ -11,9 +13,12 @@ export const Card = ({ currMovies }) => {
                 </div>
                 <div>
                     <div>
+                        <NavLink to={`/movie/${imdbID}`}>
                         <button className="cards-btn">
                             WatchNow
                         </button>
+                        </NavLink>
+
                     </div>
                 </div>
             </div>
